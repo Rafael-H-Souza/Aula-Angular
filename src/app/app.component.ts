@@ -24,7 +24,11 @@ import { Component } from '@angular/core';
               <li>Atividade 4: Trabalhar no projeto Angular</li>
           </ul>
 
-          <!--<button class="botao">Adicionar Atividade</button>-->
+          <button (click)="increment()" class="botao">Adicionar Atividade</button>
+          <button (click)="decrement()"  class="botao">Adicionar Atividade</button>
+          <button (click)="resert()" class="botao">Adicionar Atividade</button>
+          <h2>Contador: {{contador}}</h2>
+
       </main>
 
   </body>
@@ -91,4 +95,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
+    contador = 0;
+
+    increment(){
+        this.contador++;
+    }
+
+    decrement(){
+        if(this.contador > 0){
+            this.contador--;
+        }
+    }
+
+    resert(){
+        this.contador = 0;
+    }
+
 }
