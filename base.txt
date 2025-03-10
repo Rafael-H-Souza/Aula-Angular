@@ -1,0 +1,8 @@
+
+
+ng new my-first-app --minimal --skip-tests --style=css --routing=false
+
+ng serve --open 
+
+Port: 4200, 3000
+
