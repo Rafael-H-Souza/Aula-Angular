@@ -6,3 +6,27 @@ ng serve --open
 
 Port: 4200, 3000
 
+winget install Schniz.fnm
+
+
+frm install 22
+
+Get-ExecutionPolicy
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+npm install -g npm@latest
+
+-----------------------------------------------------------------------
+npm install -g @angular/cli
+
+ng new my-first-app --minimal --skip-tests --style=css --routing=false
+ng new my-first-app --minimal --inline-template --inline-style
+
+
+Port: 4200, 3000
+
+
+npm install @angular/forms 
+
+ng serve --open 
